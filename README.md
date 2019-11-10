@@ -91,3 +91,30 @@ The papers were implemented in using korean corpus
 	+ https://arxiv.org/abs/1611.01603
 * [ ] BERT_question_answering
 	+ https://arxiv.org/abs/1810.04805
+
+
+torchtext, spacy 등을 이용하지않고 최대한 python과 pytorch만을 사용하고, 특히 한국어 corpus를 활용하여, 논문을 구현한 구현체 모음을 공개합니다 (pretrained word vector가 필요한 경우 gluonnlp에서 word vector를 활용합니다.) 특히 자연어처리 논문을 구현할 때, 필요한 glue code들이 무엇인 지 궁금하신 분들은 Vocab, Tokenizer 등의 코드들을 보시면 좋을 것 같습니다.
+
+아래의 repo에는 주로 sentence classification, pairwise-text classfication의 논문들이 구현되어있으며, 현재 추가적으로 named entity recognition, machine reading comprehension, neural machine translation 등을 구현 중입니다. 한국어 데이터에 대해서 현재 개발중이신 모델이 어느 정도로 구현이 잘 된 것인지 확인하실 때, 참고해주시면 좋을 것 같습니다.
+[sentence classification]
+bert pretrained 활용한 경우 etri와 skt pretrained를 사용한 두 가지 버전이 있습니다. 사용한 데이터셋은 이전에 박은정님이 공개하신 "naver movie review corpus"입니다.
+link : https://github.com/e9t/nsmc
+
+1. Convolutional Neural Networks for Sentence Classification (https://arxiv.org/abs/1408.5882)
+2. Character-level Convolutional Networks for Text Classification (https://arxiv.org/abs/1509.01626)
+3. Efficient Character-level Document Classification by Combining Convolution and Recurrent Layers (https://arxiv.org/abs/1602.00367)
+4. Very Deep Convolutional Networks for Text Classification (https://arxiv.org/abs/1606.01781)
+5. A Structured Self-attentive Sentence Embedding
+(https://arxiv.org/abs/1703.03130)
+6. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (https://arxiv.org/abs/1810.04805)
+
+[pairwise-text classification]
+bert pretrained 활용한 경우 etri와 skt pretrained를 사용한 두 가지 버전이 있습니다. 사용한 데이터셋은 송영숙님이 공개하신 "Question pair" 데이터입니다.
+link : https://github.com/songys/Question_pair
+
+1. Siamese recurrent architectures for learning sentence similarity (https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12195)
+2. A Structured Self-attentive Sentence Embedding (https://arxiv.org/abs/1703.03130)
+3. Stochastic Answer Networks for Natural Language Inference
+(https://arxiv.org/abs/1804.07888)
+4. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+(https://arxiv.org/abs/1810.04805)
